@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQueruUI</title>
+	<link href="css/jquery-ui.css" rel="stylesheet" >
+	<!--<link href="css/jquery-ui.theme.css" rel="stylesheet"> -->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+</head>
+<body>
+
+ <div id="container">
+		<div class="row">
+			<div id="block-buttons" class="block">
+				  <button class="ui-button ui-widget ui-corner-all this-buttons button-interval">
+						<span class="ui-icon this-icon-download"></span> Download
+				  </button>
+
+				  <button class="ui-button ui-widget ui-corner-all this-buttons  this-clicked button-interval">
+						<span class="ui-icon this-icon-download"></span> Download
+				  </button>
+
+					<button class="ui-button ui-widget ui-corner-all this-buttons  button-interval " disabled>
+						<span class="ui-icon this-icon-download"></span> Download
+				  </button>
+			</div>
+
+			<div id="block-reg-form" class="block">
+				<form class="reg-form" action="#">
+					<input type="text" class=" this-input userName" name="userName" placeholder="Username"/>
+					<input type="password" class=" this-input password" name="password" placeholder="Password"/>
+
+					<div class="row">
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="this-checkbox">
+						<label for="checkbox-1" class="this-checkbox-label">Remember Me</label>
+
+						<input type="submit" class=" ui-button ui-widget this-buttons login-button" value="Login" />
+					</div>
+				</form>
+			</div>
+
+			<div class="block">
+
+				<div class="sliders">
+					<fieldset class="switch pos-on button-interval">
+
+
+						<label class="on">On<input type="radio" class="on_off" name="on_off" value="on"/></label>
+						<label class="off">Off<input type="radio" class="on_off" name="on_off" value="off"/></label>
+
+					</fieldset>
+
+					<fieldset class="switch pos-off button-interval">
+
+						<label class="on">On<input type="radio" class="on_off" name="on_off" value="on"/></label>
+						<label class="off">Off<input type="radio" class="on_off" name="on_off" value="off"/></label>
+					</fieldset>
+				</div>
+
+				<div class="tags">
+					<div class="row">
+						<a href="#" class="arrow-link">	<span class="text">web desige</span></a>
+						<a href="#" class="arrow-link">	<span class="text">HTML 5</span></a>	 </div>
+					<div class="row"><a href="#" class="arrow-link"><span class="text">CSS 3</span></a>
+						<a href="#" class="arrow-link"><span class="text">Programming</span></a>	 </div>
+				</div>
+			</div>
+		</div>
+
+	 	<div class="row">
+			<div class="block block-btns-player-search">
+				<div class="btns">
+					<form action="#" class="radioGroup">
+						<input type="radio" name="action" id="act-plus">			<label class = "btn plus"  for="act-plus"> </label>
+						<input type="radio" checked name="action" id="act-minus">	<label class = "btn minus" for="act-minus"></label>
+						<input type="radio" name="action" id="act-check">			<label class = "btn check" for="act-check"></label>
+						<input type="radio" name="action" id="act-close">			<label class = "btn close" for="act-close"></label>
+
+
+					</form>
+
+
+				</div>
+				<div class="slider-horizontal">
+					<div id="master" style="width:126px; margin:15px;"></div>
+
+
+
+				</div>
+				<div class="slider-vertical ">
+					<div id="slider-vertical" ></div>
+				</div>
+				<div class="player">
+					<button class="stop-play play"></button>
+					<button class="stop-play stop"></button>
+				</div>
+
+				<div class="search-block">
+					<form action="#" class="search-form">
+						<input type="text" id="serch-field" name="search" placeholder="Search...">
+						<input type="submit" value="">
+					</form>
+				</div>
+			</div>
+
+			<div class="block margin-r-calendar">
+				<div class="progressbar-block">
+					<div id="progressbar"></div>
+				</div>
+				<div class="datePicker-block">
+					<div id="datepicker"></div>
+				</div>
+			</div>
+
+			<div class="block">
+				<div class="vertical-menu-block">
+					<div id="accordion" class="vertical-menu">
+						<h3 id="menu-comments">Comments <span class="numbers">14</span></h3>
+						<div>
+							<ul>
+								<li><a href="#">Inbox<span class="numbers">10</span></a></li>
+								<li><a href="#">Outbox<span class="numbers">4</span></a></li>
+
+							</ul>
+						</div>
+						<h3 id="menu-documents">Documents <span class="numbers">3</span></h3>
+						<div>
+							<ul>
+								<li><a href="#">Inbox<span class="numbers">1</span></a></li>
+								<li><a href="#">Outbox<span class="numbers">2</span></a></li>
+							</ul>
+						</div>
+						<h3 id="menu-storage">Storage <span class="numbers">40</span></h3>
+						<div>
+							<ul>
+								<li><a href="#">Inbox<span class="numbers">20</span></a></li>
+								<li><a href="#">Outbox<span class="numbers">20</span></a></li>
+							</ul>
+						</div>
+						<h3 id="menu-applications">Applications<span class="numbers">8</span></h3>
+						<div>
+							<ul>
+								<li><a href="#">Inbox<span class="numbers">5</span></a></li>
+								<li><a href="#">IOutbox<span class="numbers">3</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="select-menu-block">
+					<form action="#" class ="select-menu"						  >
+
+						<fieldset>
+
+							<select name="speed" id="speed">
+								<option>Item 1</option>
+								<option>Item 2</option>
+								<option selected="selected">Select Menu ...</option>
+								<option>Item 4</option>
+								<option>Item 5</option>
+							</select>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+     <div class="row">
+         <div class="tabs-block">
+             <div id="tabs">
+                 <ul>
+                     <li><a href="#fragment-1"><span class="number"></span>Checkout</a></li>
+                     <li><a href="#fragment-2"><span class="number"></span>Billing</a></li>
+                     <li><a href="#fragment-3"><span class="number"></span>Shipping</a></li>
+                     <li><a href="#fragment-4"><span class="number"></span>Payment</a></li>
+                 </ul>
+                 <div id="fragment-1" class="hide">
+
+                 </div>
+                 <div id="fragment-2" class="hide">
+
+                 </div>
+                 <div id="fragment-3" class="hide">
+
+                 </div>
+                 <div id="fragment-4" class="hide">
+
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
