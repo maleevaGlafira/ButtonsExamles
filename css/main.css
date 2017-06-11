@@ -254,7 +254,7 @@ input[type="checkbox"]:checked+.this-checkbox-label:after{
 	position: absolute;
 	left: -1.93em;
 	top: 3px;
-
+	background: url("myimage/icons3.png") -1px -498px  no-repeat;
 
 	width: 9px;
 	height: 7px;
