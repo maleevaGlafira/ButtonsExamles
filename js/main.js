@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 		var $arrow = $("<div  class = 'tooltip'>75%</div>");
 
-		$( "#progressbar .ui-progressbar-value" ).append($arrow);
+		$( "#progressbar").find(".ui-progressbar-value" ).append($arrow);
 	} );
 
 	$( function() {
@@ -92,9 +92,9 @@ $(document).ready(function(){
 		active: 2,
 		activate: function (event, ui) {
 			var indexActive = ui.newTab.index();
-			var count = $("#tabs").find("ul").children().length+1;
+			var count = $(this).find("ul").children().length+1;
 
-			$( "#tabs").find("li" ).each(function( ind ) {
+			$( this).find("li" ).each(function( ind ) {
 
 				if (ind <indexActive){$(this).css('z-index', ind);}
 				if(ind == indexActive){$(this).css('z-index', count+1);}
