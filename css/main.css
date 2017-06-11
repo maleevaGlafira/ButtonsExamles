@@ -552,15 +552,14 @@ input:checked+.btn{
 	content: " ";
 	display: block;
 	top: 50%;
-
-	background: url("myimage/icons3.png") 15px -116px no-repeat;
+	background: url("myimage/icons3.png") 8px -116px no-repeat;
 	width: 45px;
 	height: 20px;
 
 }
 
 .player .stop-play.stop:after{
-	background-position:13px -138px;
+	background-position:8px -138px;
 }
 
 .player .stop-play:active{
